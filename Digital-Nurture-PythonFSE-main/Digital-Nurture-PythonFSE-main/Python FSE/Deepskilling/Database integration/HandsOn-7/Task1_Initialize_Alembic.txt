@@ -1,0 +1,20 @@
+Initialize Alembic
+
+Command:
+
+python -m alembic init migrations
+
+Output:
+Creating directory 'C:\\Users\\admin\\Downloads\\Module3-Database Integration\\HandsOn-7\\migrations' ...  done
+Creating directory 'C:\\Users\\admin\\Downloads\\Module3-Database Integration\\HandsOn-7\\migrations\\versions' ...  done
+Generating C:\Users\admin\Downloads\Module3-Database Integration\HandsOn-7\alembic.ini ...  done
+Generating C:\Users\admin\Downloads\Module3-Database Integration\HandsOn-7\migrations\env.py ...  done
+Generating C:\Users\admin\Downloads\Module3-Database Integration\HandsOn-7\migrations\README ...  done
+Generating C:\Users\admin\Downloads\Module3-Database Integration\HandsOn-7\migrations\script.py.mako ...  done
+Please edit configuration/connection/logging settings in 'C:\\Users\\admin\\Downloads\\Module3-Database Integration\\HandsOn-7\\alembic.ini' before proceeding.
+
+Created migrations folder
+Created migrations/versions folder
+Created alembic.ini
+Created env.py
+Created script.py.mako

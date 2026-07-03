@@ -1,0 +1,23 @@
+Apply Migration
+
+Command:
+
+python -m alembic upgrade head
+
+Output:
+INFO  [alembic.runtime.migration] Context impl MySQLImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 98b0916968eb, initial migration
+INFO  [alembic.runtime.migration] Running upgrade 98b0916968eb -> 79845e102082, create student table
+
+Verify Current Migration
+
+Command:
+
+python -m alembic current
+
+Output:
+
+INFO  [alembic.runtime.migration] Context impl MySQLImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+79845e102082 (head)

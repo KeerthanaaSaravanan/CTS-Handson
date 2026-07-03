@@ -1,0 +1,34 @@
+Rollback Migration
+
+Command:
+
+python -m alembic downgrade -1
+
+Output:
+PS C:\Users\admin\Downloads\Module3-Database Integration\HandsOn-7> python -m alembic downgrade -1
+INFO  [alembic.runtime.migration] Context impl MySQLImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Running downgrade 79845e102082 -> 98b0916968eb, create student table
+
+Rollback to Base
+
+Command:
+
+python -m alembic downgrade base
+
+Output:
+PS C:\Users\admin\Downloads\Module3-Database Integration\HandsOn-7> python -m alembic downgrade base
+INFO  [alembic.runtime.migration] Context impl MySQLImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Running downgrade 98b0916968eb -> , initial migration
+
+Migration History
+
+Command:
+
+python -m alembic history
+
+Output:
+
+98b0916968eb -> 79845e102082 (head), create student table
+<base> -> 98b0916968eb, initial migration

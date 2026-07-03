@@ -1,0 +1,15 @@
+Create Migration
+
+Command:
+
+python -m alembic revision -m "initial migration"
+
+python -m alembic revision -m "create student table"
+
+Output:
+Generating C:\Users\admin\Downloads\Module3-Database Integration\HandsOn-7\migrations\versions\98b0916968eb_initial_migration.py ...  done
+Generating C:\Users\admin\Downloads\Module3-Database Integration\HandsOn-7\migrations\versions\79845e102082_create_student_table.py ...  done
+
+Migration files created successfully inside:
+
+migrations/versions/

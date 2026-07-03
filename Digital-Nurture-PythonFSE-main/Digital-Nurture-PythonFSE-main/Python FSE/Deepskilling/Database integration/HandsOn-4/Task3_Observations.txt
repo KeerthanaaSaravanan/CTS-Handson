@@ -1,0 +1,67 @@
+
+Hands-On 4 Task 3 Observation:
+
+Output:
+============================================================
+VERSION 1 : N+1 QUERY
+============================================================
+Arjun Mehta
+Arjun Mehta
+Priya Suresh
+Priya Suresh
+Rohan Verma
+Vikram Das
+Vikram Das
+Kavya Menon
+Deepika Rao
+Deepika Rao
+Rahul Sharma
+Ashwina Narendrakumar
+
+Queries Executed : 13
+Execution Time : 0.0 seconds
+
+
+============================================================
+VERSION 2 : SINGLE JOIN
+============================================================
+Arjun Mehta - Data Structures & Algorithms - Grade: A
+Arjun Mehta - Database Management Systems - Grade: B
+Priya Suresh - Data Structures & Algorithms - Grade: B
+Priya Suresh - Object Oriented Programming - Grade: A
+Rohan Verma - Circuit Theory - Grade: A
+Vikram Das - Data Structures & Algorithms - Grade: B
+Vikram Das - Database Management Systems - Grade: A
+Kavya Menon - Circuit Theory - Grade: B
+Deepika Rao - Data Structures & Algorithms - Grade: A
+Deepika Rao - Object Oriented Programming - Grade: B
+Rahul Sharma - Database Management Systems - Grade: None
+Ashwina Narendrakumar - Database Management Systems - Grade: None
+
+Queries Executed : 1
+Execution Time : 0.00101 seconds
+
+Connection Closed.
+
+
+
+Version 1:
+
+• One query fetches all enrollments.
+• Then one additional query is executed for every enrollment.
+• Total Queries = N + 1
+
+Example
+10 enrollments
+1 + 10 = 11 Queries
+
+
+Version 2:
+
+Used JOIN
+Everything is fetched in one SQL query.
+Total Queries = 1
+
+Conclusion:
+JOIN is much faster.
+It reduces database round trips,improves performance,and avoids the N+1 Query Problem.
